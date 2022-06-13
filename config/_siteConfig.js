@@ -1,3 +1,4 @@
+/* jshint esversion: 8 */
 /**
  * CMS Configuration
  * Alter 'netlify' in the import statment below to one of the following:
@@ -23,22 +24,12 @@ export default {
       link: '/about'
     },
     {
-      name: 'Contact',
-      link: '/contact'
-    },
-    {
       name: 'Categories',
       link: '/categories'
     },
     {
-      name: 'Github Repo',
-      link: 'https://github.com/danielkellyio/awake-template',
-      target: '_blank'
-    },
-    {
-      name: 'Awake+ Premium',
-      link: 'https://awake-premium-lp.netlify.com/',
-      target: '_blank'
+      name: 'Contact',
+      link: '/contact'
     }
   ],
   hero: {
@@ -66,13 +57,13 @@ export default {
 
   // Newsletter Subscribe
   newsletter: {
-    on: true,
+    on: false,
     heading: 'Subscribe to Our Newsletter',
     btnText: 'Subscribe',
     // Can be the form action on a mail chimp form, a hubspot form,
     // or any other url you want to post the form data to
     mailchimp: {
-      on: true,
+      on: false,
       formAction:
         'https://danielkelly.us3.list-manage.com/subscribe/post?u=d3c2e762b66a2353d0bc29bf3&amp;id=2abeaa06e0'
     },
